@@ -241,7 +241,7 @@ filextype *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm
         \ {View in gpicview}
         \ gpicview %c,
         \ {View in shotwell}
-        \ shotwell,
+        \ shotwell %c &,
 fileviewer *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm
          \ convert -identify %f -verbose /dev/null
 
