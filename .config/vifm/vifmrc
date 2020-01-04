@@ -235,9 +235,9 @@ filetype *.[1-8] man ./%c
 fileviewer *.[1-8] man ./%c | col -b
 
 " Images
-filextype *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm,*.tif,*JPEG
-        \ {View in shotwell}
-        \ shotwell %c &,
+filextype *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm,*.tif,*.JPEG,*.svg
+        \ {View in Image Viewer}
+        \ xdg-open %c &,
         \ {View in sxiv}
         \ sxiv %f,
         \ {View in gpicview}
