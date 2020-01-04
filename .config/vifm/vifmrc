@@ -235,13 +235,13 @@ filetype *.[1-8] man ./%c
 fileviewer *.[1-8] man ./%c | col -b
 
 " Images
-filextype *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm
+filextype *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm,*.tif,*JPEG
+        \ {View in shotwell}
+        \ shotwell %c &,
         \ {View in sxiv}
         \ sxiv %f,
         \ {View in gpicview}
         \ gpicview %c,
-        \ {View in shotwell}
-        \ shotwell %c &,
 fileviewer *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm
          \ convert -identify %f -verbose /dev/null
 
@@ -331,10 +331,9 @@ filetype *.7z
 fileviewer *.7z 7z l %c
 
 " Office files
-" filextype *.odt,*.doc,*.docx,*.xls,*.xlsx,*.odp,*.pptx libreoffice %f &
-filextype *.odt,*.dot,*.doc,*.docx,*wps,*wpt wps %f &
-filextype *.odt,*.xls,*.xlsx,*.et,*.ett et %f &
-filextype *.odt,*.dps,*.dpt,*.ppt,*.pot,*.pptx wpp %f &
+filextype *.odt,*.dot,*.rtf,*.doc,*.docx,*wps,*wpt wps %f &
+filextype *.ods,*.xls,*.xlsx,*.et,*.ett,*csv et %f &
+filextype *.odp,*.dps,*.dpt,*.ppt,*.pot,*.pptx wpp %f &
 fileviewer *.doc catdoc %c
 fileviewer *.docx, docx2txt.pl %f -
 
