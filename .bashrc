@@ -142,3 +142,6 @@ alias gg='git log --all --decorate --oneline --graph'
 # Enable control-s and control-q
 stty -ixon
 alias dotfiles='/usr/bin/git --git-dir=/home/dinghai/.dotfiles/ --work-tree=/home/dinghai'
+
+# Replace vifm with vifmrun for previewing images, pdf, etc
+alias vifm='/home/dinghai/.config/vifm/scripts/vifmrun'

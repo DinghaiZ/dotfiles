@@ -172,5 +172,6 @@ nnoremap <c-s> :w<CR>
 inoremap <c-s> <Esc>:w<CR>a
 vnoremap <c-s> <Esc>:w<CR>
 
-" Run R file
-
+" PDF scrolling in vifm
+map > :!vifmimg inc<CR>
+map < :!vifmimg dec<CR>
