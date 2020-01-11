@@ -84,6 +84,7 @@ command! MakeTags !ctags -R .
 " - This doesn't help if you want a visual list of tags
 
 " APPEND TAGS FOR fastai2
+set tags=tags;
 set tags+=~/anaconda3/envs/fastai2/lib/python3.7/site-packages/fastcore/tags
 set tags+=~/anaconda3/envs/fastai2/lib/python3.7/site-packages/fastprogress/tags
 set tags+=~/anaconda3/envs/fastai2/lib/python3.7/site-packages/fastscript/tags
