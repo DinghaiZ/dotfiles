@@ -146,5 +146,3 @@ alias dotfiles='/usr/bin/git --git-dir=/home/dinghai/.dotfiles/ --work-tree=/hom
 # Replace vifm with vifmrun for previewing images, pdf, etc
 alias vifm='/home/dinghai/.config/vifm/scripts/vifmrun'
 
-# Always run tmux
-tmux attach -t base || tmux new -s base
