@@ -169,8 +169,10 @@ command! reload :write | restart
 " program.
 
 " IPython Notebook
-filextype *.ipynb 
+filextype *.ipynb
+         \ {Open in Jupyter Lab}
          \ jupyter lab %c %i &,
+         \ {Open in Jupyter Notebook}
          \ jupyter notebook %c %i &,
 
 " Pdf
@@ -221,7 +223,7 @@ fileviewer *.avi,*.mp4,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.mpeg,*.vob,
 
 " Web
 filextype *.html,*.htm
-        \ {Open with firefox}
+        \ {Open with Chrome}
         \ google-chrome %c %i &,
         \ {Open with dwb}
         \ dwb %f %i &,
@@ -468,9 +470,9 @@ nnoremap yd :!echo %d | xclip %i<cr>
 nnoremap yf :!echo %c:p | xclip %i<cr>
 
 " Mappings for faster renaming
-nnoremap I cw<c-a>
+nnoremap I cW<c-a>
 nnoremap cc cw<c-u>
-nnoremap A cw
+nnoremap A cW
 
 " Open console in current directory
 nnoremap ,t :!xterm &<cr>
